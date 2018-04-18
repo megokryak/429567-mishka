@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Милый Мишка"/>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">
+              <img class="site-list__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Милый Мишка"/>
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Поиск по сайту</a>
+          </li><li class="site-list__item">
+            <a href="#">Корзина: пока пусто</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <div class="header-catalog">
+        <h1 class="header-catalog__title">каталог товаров</h1>
+      </div>
+      <section class="catalog-item">
+        <img class="catalog-item__image" src="http://placehold.it/150x100" width="150" height="100" alt="Зайчик попрыгайчик">
+        <h2 class="catalog-item_title">Зайчик попрыгайчик</h2>
+        <p class="catalog-item__description">
+          Рост 30 см, вес 200 г
+        </p>
+        <b class="catalog-item__price catalog-item__icon">1 200 руб.</b>
+      </section>
+      <section class="catalog-item">
+        <img class="catalog-item__image" src="http://placehold.it/150x100" width="150" height="100" alt="Корзинка для белья">
+        <h2 class="catalog-item_title">Корзинка для белья</h2>
+        <p class="catalog-item__description">
+          Диаметр 15 см, высота 10 см
+        </p>
+        <b class="catalog-item__price catalog-item__icon">600 руб.</b>
+      </section>
+      <section class="catalog-item">
+        <img class="catalog-item__image" src="http://placehold.it/150x100" width="150" height="100" alt="Большая корзина для игрушек">
+        <h2 class="catalog-item_title">Большая корзина для игрушек</h2>
+        <p class="catalog-item__description">
+          Диаметр 30 см, высота 30 см
+        </p>
+        <b class="catalog-item__price catalog-item__icon">1 500 руб.</b>
+      </section>
+      <section class="how-do">
+        <h2 class="how-do__title how-do__icon">Процесс производства</h2>
+        <video class="how-do__video" src="#" width="150" height="150"></video>
+        <p class="how-do__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
+        <a class="btn">Сделать заказ</a>
+      </section>
+      <div class="modal-window">
+        <form class="add-car" action="https://echo.htmlacademy.ru" method="get">
+          <h2 class="add-car__title">Добавить в корзину</h2>
+          <p class="add-car__text">Выберите размер:</p>
+          <label>
+            <input class="add-car__size add-car__size--active" type="radio" name="size" value="s">S
+            <input class="add-car__size" type="radio" name="size" value="m">M
+            <input class="add-car__size" type="radio" name="size" value="l">L
+          </label>
+          <input class="btn btn__submit" type="submit" value="Добавить">
+        </form>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <ul class="page-footer__social-blog social">
+        <li class="social__item">
+          <a class ="social__link social__link--inst" href="#">Инстаграм</a>
+        </li>
+        <li class="social__item">
+          <a class ="social__link social__link--fb" href="#">Фэйсбук</a>
+        </li>
+        <li class="social__item">
+          <a class ="social__link social__link--tw" href="#">Твиттер</a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано: </b>
+        <a class="copyright__link" href="#"><img class="copyright__image" src="http://placehold.it/150x100" width="150" height="100" alt="htmlacademy"/></a>
+      </div>
+    </footer>
+  </body>
+</html>
