@@ -10,12 +10,37 @@ body {
   font-size: 15px;
   color: #444444;
   font-family: "OpenSans", "Arial", sans-serif; 
-  line-height: 30px;
+  line-height: 24px;
+  /*background: #292929 url("../img/mishka-index-mobile.jpg") no-repeat 50% 0;*/
 }
 
-section, ul, article, h1, h2, h3, h4 {
+section, ul, article, h1, h2, h3, h4, p {
   margin:0;
   padding: 0;
+}
+
+blockquote {
+  margin:0;
+  padding:0;
+}
+
+.content {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn {
+  display:block;
+  font-size:17px;
+  color: #434343;
+  font-weight: bold;
+  height:48px;
+  line-height:48px;
+  text-align:center;
+  border: 2px solid #434343;
+  text-transform: uppercase;
+  text-decoration:none;
 }
 
 @import "main-nav/main-nav.less";
@@ -23,4 +48,12 @@ section, ul, article, h1, h2, h3, h4 {
 @import "header-image/header-image.less";
 @import "visually-hidden/visually-hidden.less";
 @import "product/product.less";
-
+@import "page-header/page-header.less";
+@import "feature/feature.less";
+@import "about-us/about-us.less";
+@import "contacts/contacts.less";
+@import "rewiews/rewiews.less";
+@import "modal-window/modal-window.less";
+@import "page-footer/page-footer.less";
+@import "social/social.less";
+@import "copyright/copyright.less";

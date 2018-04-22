@@ -1,14 +1,18 @@
 .product__list{
   margin: 0;
   padding: 0;
+  display:flex;
+  flex-direction:column;
 }
 
 .product__section {
-  position:relative;
   list-style:none;
   padding-left: 30px;
   height: 103px;
   background-color:#55c3b2;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
 }
 
 .product__section:first-child {
@@ -20,7 +24,22 @@
   line-height:24px;
   font-size: 19px;
   color:#ffffff;
+  width:105px;
+}
+
+.product__icon {
+  padding-right:30px;
+  width: 60px;
+}
+
+/*
+.product__link {
+  text-decoration: none;
+  line-height:24px;
+  font-size: 19px;
+  color:#ffffff;
   display: inline-block;
   width:105px;
   vertical-align: middle;
 }
+*/
