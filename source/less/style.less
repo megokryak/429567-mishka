@@ -19,6 +19,10 @@ section, ul, article, h1, h2, h3, h4, p {
   padding: 0;
 }
 
+h1 {
+  text-transform: none ;
+}
+
 blockquote {
   margin:0;
   padding:0;
@@ -32,15 +36,19 @@ blockquote {
 
 .btn {
   display:block;
+  background: none;
+  width: 100%;
   font-size:17px;
   color: #434343;
   font-weight: bold;
   height:48px;
   line-height:48px;
   text-align:center;
+  vertical-align: middle;
   border: 2px solid #434343;
   text-transform: uppercase;
   text-decoration:none;
+  box-sizing: content-box;
 }
 
 @import "main-nav/main-nav.less";
@@ -57,3 +65,7 @@ blockquote {
 @import "page-footer/page-footer.less";
 @import "social/social.less";
 @import "copyright/copyright.less";
+@import "header-catalog/header-catalog.less";
+@import "catalog-item/catalog-item.less";
+@import "how-do/how-do.less";
+@import "header-order/header-order.less";
