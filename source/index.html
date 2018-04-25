@@ -12,37 +12,32 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><img src="img/icon-menu-open.svg" alt="open"/></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <div class="content">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
               <a class="site-list__link" href="/">
                 <img class="site-list__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Милый Мишка"/><img class="site-list__close" src="./img/icon-menu-close.svg" width="21" height="20" alt="close"/>
               </a>
-            </div>
-          </li>
-          <li class="site-list__item">
-            <div class="content">
+            </li>
+            <li class="site-list__item">
               <a class="site-list__link" href="#">Каталог товаров</a>
-            </div>
-          </li>
-          <li class="site-list__item">
-            <div class="content">
+            </li>
+            <li class="site-list__item">
               <a class="site-list__link" href="#">Вязание на заказ</a>
-            </div>
-          </li>
-        </ul>
-        <ul class="user">
-          <li class="user__item">
-            <div class="content user-wrapper">
-              <img class="user__icon" src="./img/icon-search.svg" width="18" height="18" alt="search"/><a class="user__link" href="#">Поиск по сайту</a>
-            </div>
-          </li>
-          <li class="user__item">
-            <div class="content user-wrapper">
-              <img class="user__icon" src="./img/icon-cart.svg" width="18" height="18" alt="cart"/><a class="user__link" href="#">Корзина: пока пуста</a>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+          <ul class="user">
+            <li class="user__item">
+              <img class="user__icon" src="./img/icon-search.svg" width="18" height="18" alt="search"/><a class="user__link user__link--search" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user__item">
+              <img class="user__icon" src="./img/icon-cart.svg" width="18" height="18" alt="cart"/><a class="user__link user__link--card" href="#">Корзина: пока пуста</a>
+            </li>
+            <li class="user__item user__item--delivery">
+              Бесплатная доставка по России
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="page-main">
