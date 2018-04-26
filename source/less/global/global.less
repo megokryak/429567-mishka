@@ -44,7 +44,15 @@ blockquote {
 
 @media (min-width: @tablet-width) {
   body {
-    min-width: 768px;
-    background: #292929 url("../img/mishka-index-tablet.jpg") no-repeat 50% 0;
+    width: 768px;
+    /*background: #292929 url("../img/mishka-index-tablet.jpg") no-repeat 50% 0;*/
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    width: 1200px;
+    background: none;
+    border:1px solid black;
   }
 }

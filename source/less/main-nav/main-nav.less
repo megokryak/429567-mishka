@@ -8,15 +8,37 @@
   border: none;
 }
 
+.main-nav__free-shipping {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .main-nav {
-    width: 768px;
+    position: relative;
+    width: 668px;
     padding-left: 50px;
-    padding-right:50px;
+    padding-right: 50px;
   }
   
   .main-nav__wrapper {
     display: flex;
     justify-content: flex-start;
+  }
+  
+  .main-nav__free-shipping {
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    display: inline-block;
+    color: #444444;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    position: relative;
+    width: 1000px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
