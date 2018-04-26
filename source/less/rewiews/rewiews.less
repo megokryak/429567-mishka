@@ -1,4 +1,6 @@
 .rewiews {
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 40px;
 }
 
@@ -51,4 +53,29 @@
 
 .rewiews__next {
   background: url("../img/icon-right-arrow.svg") no-repeat 50% 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .rewiews {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 457;
+    background: url("../img/review@1x.jpg") no-repeat top left;
+  }
+  
+  .rewiews__title {
+    order: -4;
+  }
+  
+  .rewiews__flex-order {
+    order: -3;
+  }
+  
+  .rewiews__item {
+    order: -2;
+  }
+  
+  .rewiews__flex-wrap {
+    order: -1
+  }
 }

@@ -32,11 +32,6 @@
   text-align: center;
 }
 
-.site-list__logo-image--tablet,
-.site-list__logo-image--desktop {
-  display: none;
-}
-
 .site-list__close {
   width: 21px;
   height: 20px;
@@ -79,30 +74,12 @@
     height: auto;
   }
   
-  .site-list__logo-image--mobile {
-    display: none;
-  }
-  
-  .site-list__logo-image--tablet {
-    display: inline-block;
-    width: 86px;
-    height: 35px;
-  }
-  
   .site-list__item--bottom {
     display:none;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .site-list__logo-image--tablet,
-  .site-list__logo-image--mobile {
-    display: none;
-  }
-  
-  .site-list__logo-image--desktop {
-    display: block;
-  }
+@media (min-width: @desktop-width) {  
   
   .site-list__item:first-child {
     display:none;
