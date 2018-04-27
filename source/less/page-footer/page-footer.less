@@ -9,3 +9,37 @@
   padding-bottom: 23px;
   padding-top: 20px;
 }
+
+.page-footer__logo {
+  width: 264px;
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__logo {
+    display: block;
+  }
+  
+  .page-footer__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .page-footer__social-blog,
+  .page-footer__copyright {
+    margin: 0;
+  }
+  
+  .page-footer__copyright {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__logo {
+    width: 430px;
+  }
+  
+}
+

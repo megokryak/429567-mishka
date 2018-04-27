@@ -25,7 +25,38 @@
   border-bottom: 1px solid #ececec;
 }
 
-.how-do__margin {
-  margin-left: 35px;
-  margin-right: 35px;
+.how-do__wrapper-btn,
+.how-do__wrapper-title {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .how-do {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .how-do__video {
+    order: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .how-do {
+    position: relative;
+    align-items: flex-end;
+  }
+  
+  .how-do__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .how-do__wrapper-btn,
+  .how-do__wrapper-title,
+  .how-do__text {
+    width: 350px;
+  }
 }
