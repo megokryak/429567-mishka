@@ -1,3 +1,6 @@
+.product {
+  background-color: #f9f9f9;
+}
 .product__list {
   margin: 0;
   padding: 0;
@@ -7,7 +10,7 @@
 
 .product__section {
   list-style: none;
-  padding-left: 30px;
+  padding-left: 15px;
   height: 103px;
   background-color: #55c3b2;
   display: flex;
@@ -19,12 +22,22 @@
   background-color: #63d1bb;
 }
 
+.product__section:hover {
+  height: 108px;
+  margin-top: -5px;
+}
+
 .product__link {
   text-decoration: none;
   line-height: 24px;
   font-size: 19px;
   color: #ffffff;
-  width: 105px;
+  width: 150px;
+  padding-left: 15px;
+  padding-right: 52px;
+  padding-top: 28px;
+  padding-bottom: 27px;
+  text-align: left;
 }
 
 .product__icon {
@@ -33,26 +46,45 @@
 }
 
 @media (min-width: @tablet-width) {
-  .product {
-    padding-left: 50px;
-    padding-right: 50px;
+  .product::after {
+    display: block;
+    content: "";
+    position: relative;
+    height: 24px;
+    background: url("../img/zigzag.svg") repeat-x 0 0;
+    background-size: cover;
+    z-index: 1;
+    padding: 0;
+    margin-top: -10px;
   }
+  
   .product__list {
     flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   
   .product__section {
     width: 100%;
+    padding-left: 0;
   }
   
   .product__link {
-    width:50%;
+    text-align: center;
+    width: 105px;
+    padding-left: 35px;
+    padding-right: 90px;
+
   }
 }
 
 @media (min-width: @desktop-width) {
-  .product {
-    padding-left: 100px;
-    padding-right: 100px;
+  .product::after {
+    height: 34px;
+    margin-top: -14px;
+  }
+  
+  .product__link {
+     padding-right: 270px;
   }
 }

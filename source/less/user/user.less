@@ -4,6 +4,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
 }
 
 .user__item {
@@ -31,8 +32,18 @@
 
 @media (min-width: @tablet-width) {
   .user {
+    order: -4;
+    flex-grow: 1;
+    border-bottom: 1px solid #ebebeb;
     flex-direction: row;
-    width: 350px;
+    padding-right: 50px;
+  }
+  
+  .user__icon {
+    margin: 0;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    cursor: pointer;
   }
   
   .user__link--search {
@@ -54,5 +65,11 @@
     margin-left: 0px;
     padding-left: 32px;
     padding-right: 32px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user {
+    padding-right: 50px;
   }
 }

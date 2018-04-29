@@ -13,7 +13,7 @@
 
 .feature__top-week {
   font-size: 17px;
-  line-height: 26px;
+  line-height: 20px;
   font-weight: bold;
   color: #63d1bb;
 }
@@ -60,6 +60,7 @@
 
 .feature__margin {
   margin-top: 28px;
+  width: 298px;
 }
 
 @media (min-width: @tablet-width) {
@@ -68,11 +69,17 @@
     align-items: flex-end;
     flex-wrap: wrap;
   }
+  
   .feature__title {
     flex-grow: 1;
     text-align: left;
     font-size: 43px;
     line-height: 50px;
+  }
+  
+  .feature__top-week {
+    font-size: 17px;
+    line-height: 17px;
   }
   
   .feature__description {
@@ -100,7 +107,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 290px;
+    padding-right: 45px;
   }
   
   .feature__image {
@@ -114,6 +122,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .feature__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  
   .feature__top-week {
     order: -1;
     width: 100px;

@@ -26,7 +26,7 @@
 
 .reviews__social {
   font-size: 17px;
-  line-height: 24px;
+  line-height: 30px;
 }
 
 .reviews__padding {
@@ -66,6 +66,8 @@
   }
   
   .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
     order: -4;
     flex-grow: 1;
   }
@@ -87,17 +89,33 @@
   }
   
   .reviews__text {
+    font-size: 17px;
     width: 100%;
   }
   
   .reviews__toggle {
     width: 150px;
   }
+  
+  .reviews__name {
+    font-size: 18px;
+  }
+  
+  .reviews__author {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .reviews {
-    padding-left: 275px;
+    padding-left: 225px;
   }
+  
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  
   
 }
