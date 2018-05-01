@@ -56,7 +56,10 @@
   .contacts__wrapper {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
   }
+  
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
@@ -69,16 +72,11 @@
   }
 
   .contacts__info {
-    display:flex;
+    display: flex;
   }
 
   .contacts__row {
     width: 50%;
-  }
-
-  .contacts__wrapper {
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   .contacts__flag {
@@ -94,6 +92,7 @@
 
 @media (min-width: @desktop-width) {
   .contacts {
+    width: 525px;
     padding-left: 50px;
     padding-right: 50px;
     position: relative;
@@ -102,7 +101,7 @@
 
   .contacts__wrapper {
     padding-left: 0;
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   .contacts__flag {
@@ -115,7 +114,7 @@
   }
 
   .contacts__info {
-    display:block;
+    display: block;
     width: 350px;
     margin-left: 175px;
   }
@@ -129,12 +128,8 @@
   }
 
   .contacts__wrapper-btn {
-    padding-right: 0px;
+    padding-right: 0;
     padding-left: 175px;
     width: 350px;
-  }
-
-  .contacts__wrapper {
-    width: 525px;
   }
 }
