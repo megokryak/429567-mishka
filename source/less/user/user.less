@@ -16,6 +16,7 @@
 }
 
 .user__link {
+  display: block;
   text-decoration: none;
   text-alight: left;
   flex-grow: 1;
@@ -26,8 +27,42 @@
   padding-left: 25px;
 }
 
+.user__item:hover a{
+  opacity: 0.6;
+}
+
+.user__item:hover .user__icon {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.user__item:active a{
+  opacity: 0.3;
+}
+
+.user__item:active .user__icon {
+  fill: #63d1bb;
+  opacity: 0.3;
+}
+
+.user__link:active {
+  opacity: 0.3;
+}
+
 .user__icon {
   margin-left: 30px;
+}
+
+.user__icon--search {
+  width: 18px;
+  height: 18px;
+  opacity: 0.2;
+}
+
+.user__icon--cart {
+  width: 20px;
+  height: 19px;
+  opacity: 0.2;
 }
 
 @media (min-width: @tablet-width) {
