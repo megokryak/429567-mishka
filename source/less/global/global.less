@@ -5,7 +5,8 @@
 }
 
 body {
-  margin: 0;
+  min-width: 320px;
+  margin: 0 auto;
   padding: 0;
   font-size: 15px;
   color: #444444;
@@ -39,4 +40,28 @@ blockquote {
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    width: 768px;
+    /*background: #292929 url("../img/mishka-index-tablet.jpg") no-repeat 50% 0;*/
+  }
+
+  .content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    width: 1150px;
+    background: none;
+  }
+
+  .content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }

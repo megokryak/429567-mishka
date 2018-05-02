@@ -18,7 +18,6 @@
 .about-us__advantages-item {
   display: flex;
   flex-direction: column;
-  padding-right: 50px;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
@@ -30,4 +29,42 @@
   align-self: flex-start;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__description {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .about-us__advantages {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us__advantages-item {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__description {
+    line-height: 22px;
+  }
 }

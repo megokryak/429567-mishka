@@ -1,0 +1,26 @@
+.special-offers {
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.special-offers__item {
+  height: 40px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.special-offers__link {
+  text-decoration: none;
+  color: #000000;
+  padding-left: 50px;
+  font-weight: bold;
+}
+
+@media (min-width: @desktop-width) {
+  .special-offers {
+    display: flex;
+  }
+}

@@ -1,6 +1,6 @@
 .header-image {
   min-height: 213px;
-  background: url("../img/hero-mobile@1x.jpg") no-repeat 50% -20px;
+  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% -20px;
 }
 
 .header-image__padding {
@@ -15,4 +15,40 @@
   font-weight: bold;
   color: #000000;
   line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .header-image {
+    margin-top: -40px;
+  }
+
+  .header-image__title {
+    font-size: 43px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 50px;
+  }
+
+  .header-image__padding {
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-image {
+    margin-top: -40px;
+  }
+
+  .header-image__title {
+    font-size: 53px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 57px;
+  }
+
+  .header-image__padding {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
 }
