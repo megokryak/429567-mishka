@@ -57,7 +57,7 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
-    width: 370px;
+    width: 395px;
     background-color: #ffffff;
     order: -5;
     padding-left: 50px;
@@ -66,19 +66,21 @@
   .site-list__item {
     display: flex;
     align-items: center;
-    width: 50%;
+    flex-grow: 1;
     border-bottom: none;
     height: auto;
   }
 
   .site-list__item:first-child {
     border-right: 1px solid #ebebeb;
+    width: 173px;
   }
 
   .site-list__link {
+    font-size: 17px;
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 24px;
+    padding-top: 21px;
+    padding-bottom: 27px;
   }
 
   .site-list__item:first-child a {
