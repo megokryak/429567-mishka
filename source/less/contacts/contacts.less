@@ -40,7 +40,6 @@
 
 .contacts__map {
   display: block;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -65,6 +64,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contacts{
+    padding-top: 25px;
+  }
+
   .contacts__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -76,6 +79,7 @@
     font-size: 43px;
     line-height: 50px;
     flex-grow: 1;
+    padding-bottom: 48px;
   }
 
   .contacts__name,
@@ -93,12 +97,19 @@
 
   .contacts__flag {
     display: block;
+    padding-top: 20px;
+    padding-right: 2px;
   }
 
   .contacts__wrapper-btn {
-    padding-left: 220px;
-    padding-right: 220px;
+    padding-left: 270px;
+    padding-right: 270px;
     flex-grow: 1;
+    margin-top: 60px;
+  }
+
+  .contacts__wrapper-map {
+    margin-top: 57px;
   }
 }
 

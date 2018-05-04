@@ -66,6 +66,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .feature {
+    padding-bottom: 70px;
+  }
+  
   .feature__wrapper-info {
     display: flex;
     align-items: flex-end;
@@ -77,30 +81,35 @@
     text-align: left;
     font-size: 43px;
     line-height: 50px;
+    margin-top: 30px;
   }
 
   .feature__top-week {
     font-size: 17px;
     line-height: 17px;
-    width: 100px;
+    width: 120px;
     text-align: center;
+    padding-bottom: 5px;
   }
 
   .feature__description {
     font-size: 17px;
     line-height: 30px;
+    padding-top: 50px; 
   }
 
   .feature__info {
     font-size: 15px;
     line-height: 20px;
+    margin-top: 38px;
+    margin-bottom: 40px;
   }
 
   .feature__price {
     font-size: 20px;
   }
 
-  .feature__wrapper-decription {
+  .feature__wrapper-description {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -112,8 +121,13 @@
     position: absolute;
     order: -4;
     left: 100%;
+    top: 55px;
     align-self: flex-end;
     margin: 0;
+  }
+  
+  .feature__margin {
+    margin-top: 38px;
   }
 }
 
@@ -137,7 +151,7 @@
     z-index: -10;
   }
 
-  .feature__wrapper-decription {
+  .feature__wrapper-description {
     padding-left: 175px;
   }
 }
