@@ -4,8 +4,28 @@
   line-height: 30px;
   font-weight: bold;
   text-align: center;
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding-top: 70px;
+  padding-bottom: 75px;
   vertical-align: middle;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .header-catalog {
+    margin-top: -40px;
+  }
+
+  .header-catalog__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 95px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-catalog__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 100px;
+  }
 }
