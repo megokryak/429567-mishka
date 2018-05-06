@@ -3,7 +3,10 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #63d1bb;
-  padding-top: 25px;
+}
+
+.form-order {
+  margin-top: 24px;
 }
 
 .form-order__title::after {
@@ -15,14 +18,32 @@
   margin-top: -17px;
 }
 
-.form-order__wrapper {
+.form-order__wrapper,
+.form-order__wrapper-radio,
+.form-order__wrapper-checkbox,
+.form-order__wrapper-fullname {
   display: flex;
   flex-direction: column;
+}
+
+.form-order__wrapper-checkbox {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.form-order__wrapper-radio {
+  padding-top: 24px;
+  padding-bottom: 11px;
+}
+
+.form-order__wrapper-fullname {
+  padding-top: 29px;
 }
 
 .form-order__label-info {
   display: flex;
   flex-direction: column;
+  padding-bottom: 22px;
 }
 
 .form-order__reg {
@@ -30,7 +51,6 @@
   line-height: 18px;
   font-weight: bold;
   padding-bottom: 18px;
-  padding-top: 20px;
 }
 
 .form-order__input,
@@ -40,7 +60,7 @@
   font-size: 17px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.3);
-  padding-bottom: 19px;
+  padding-bottom: 13px;
   border: 0;
   border-bottom: 2px solid rgba(0, 0, 0, 1);
   width: 100%;
@@ -73,11 +93,85 @@
 }
 
 .form-order__text {
-  font-size: 14;
+  font-size: 14px;
   line-height: 16px;
   color: #444444;
   padding-top: 16px;
   padding-bottom: 33px;
+}
+
+.form-order__label-color {
+  position:relative;
+  height: 40px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  padding-left: 61px;
+  padding-top: 10px;
+  padding-bottom: 11px;
+}
+
+.form-order__type{
+  display: none;
+}
+
+.form-order__label-type {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position:relative;
+  height: 40px;
+  line-height: 18px;
+  padding-left: 61px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.form-order__radio-decor {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #444444;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.form-order__color {
+  display: none;
+}
+
+.form-order__checkbox-decor {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #444444;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.form-order__type--active + span::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #62d1ba;
+  top: 11px;
+  left: 11px;
+}
+
+.form-order__color--active + span::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  width: 27px;
+  height: 17px;
+  background: url("../img/icon-tick.svg") no-repeat;
+  background-size: contain;
+  top: 9px;
+  left: 7px;
 }
 
 @media (min-width: @tablet-width) {
