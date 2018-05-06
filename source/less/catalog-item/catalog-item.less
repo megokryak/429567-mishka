@@ -87,7 +87,7 @@
   }
 
   .catalog-item__wrapper-price {
-    paading-top: 25px;
+    padding-top: 25px;
     padding-bottom: 25px;
   }
 
@@ -102,9 +102,41 @@
 @media (min-width: @desktop-width) {
   .catalog-item {
     flex-direction: column;
+    margin-top: 78px;
+    width: 313px;
+  }
+
+  .catalog-item:not(:first-child) {
+    margin-top: 78px;
   }
 
   .catalog-item__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
     width: auto;
+  }
+
+  .catalog-item__image {
+    height: 464px;
+  }
+
+  .catalog-item__title {
+    padding-top: 21px;
+  }
+
+  .catalog-item__description {
+    padding-top: 6px;
+    padding-bottom: 14px;
+  }
+
+  .catalog-item__wrapper-price {
+    padding-top: 21px;
+    padding-bottom: 22px;
+  }
+
+  .catalog-item__price {
+    padding-left: 25px;
   }
 }
