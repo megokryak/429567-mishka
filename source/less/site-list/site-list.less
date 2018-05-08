@@ -10,7 +10,12 @@
   border-bottom: 1px solid #ebebeb;
 }
 
+.site-list__item:hover a {
+  opacity: 0.6;
+}
+
 .site-list__link {
+  display: block;
   text-decoration: none;
   color: #000000;
   font-size: 17px;
@@ -18,6 +23,10 @@
   line-height: 78px;
   padding-left: 75px;
   height: 78px;
+}
+
+.site-list__item:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -48,7 +57,7 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
-    width: 370px;
+    width: 395px;
     background-color: #ffffff;
     order: -5;
     padding-left: 50px;
@@ -57,19 +66,21 @@
   .site-list__item {
     display: flex;
     align-items: center;
-    width: 50%;
+    flex-grow: 1;
     border-bottom: none;
     height: auto;
   }
 
   .site-list__item:first-child {
     border-right: 1px solid #ebebeb;
+    width: 173px;
   }
 
   .site-list__link {
+    font-size: 17px;
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 24px;
+    padding-top: 21px;
+    padding-bottom: 27px;
   }
 
   .site-list__item:first-child a {

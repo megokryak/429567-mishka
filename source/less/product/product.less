@@ -10,6 +10,7 @@
 }
 
 .product__section {
+  position: relative;
   list-style: none;
   padding-left: 15px;
   height: 103px;
@@ -32,18 +33,38 @@
   text-decoration: none;
   line-height: 24px;
   font-size: 19px;
+  font-weight: bold;
   color: #ffffff;
   width: 150px;
   padding-left: 15px;
-  padding-right: 52px;
-  padding-top: 28px;
-  padding-bottom: 27px;
+  padding-right: 140px;
+  padding-top: 24px;
+  padding-bottom: 30px;
   text-align: left;
 }
 
 .product__icon {
   padding-right: 30px;
+}
+
+.product__icon--interior {
+  position: absolute;
+  width: 40px;
+  height: 62px;
+  fill: #149080;
+  opacity: 0.5;
+  right: 5px;
+  top: 22px;
+}
+
+.product__icon--toy {
+  position: absolute;
   width: 60px;
+  height: 60px;
+  fill: #149080;
+  opacity: 0.5;
+  top: 21px;
+  right: -2px;
 }
 
 @media (min-width: @tablet-width) {
@@ -68,12 +89,17 @@
   .product__section {
     width: 100%;
     padding-left: 0;
+    height: 120px;
+  }
+
+  .product__section:hover {
+    height: 125px;
   }
 
   .product__link {
     text-align: center;
     width: 105px;
-    padding-left: 35px;
+    padding-left: 32px;
     padding-right: 90px;
   }
 }

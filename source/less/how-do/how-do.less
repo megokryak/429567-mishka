@@ -1,6 +1,8 @@
 .how-do {
   border: 1px solid #ececec;
   margin-top: 30px;
+  padding-bottom: 32px;
+  margin-bottom: 57px;
 }
 
 .how-do__image {
@@ -12,17 +14,22 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
-  padding-left: 27px;
+  padding-left: 55px;
   padding-right: 27px;
   color: #000000;
 }
 
+.how-do__wrapper-text {
+  padding-left: 32px;
+  padding-right: 40px;
+  padding-top: 18px;
+  padding-bottom: 30px;
+}
+
 .how-do__text {
   font-size: 13px;
-  line-height: 30px;
-  margin-left: 27px;
-  margin-right: 27px;
-  border-bottom: 1px solid #ececec;
+  line-height: 24px;
+  color: #444444;
 }
 
 .how-do__wrapper-btn,
@@ -31,14 +38,64 @@
   padding-right: 35px;
 }
 
+.how-do__wrapper-title {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.how-do__icon {
+  position: absolute;
+  width: 42px;
+  height: 32px;
+  top: 30px;
+  left: 28px;
+  fill: #63d1bb;
+}
+
 @media (min-width: @tablet-width) {
   .how-do {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
+    padding-bottom: 52px;
   }
 
   .how-do__video {
     order: -1;
+    width: 668px;
+    height: 455px;
+  }
+
+  .how-do__wrapper-title {
+    padding-top: 36px;
+    padding-left: 50px;
+  }
+
+  .how-do__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .how-do__icon {
+    top: 35px;
+    left: 35px;
+  }
+
+  .how-do__wrapper-text {
+    padding-left: 40px;
+    padding-top: 9px;
+  }
+
+  .how-do__text {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .how-do__wrapper-btn {
+    padding-top: 6px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -46,17 +103,41 @@
   .how-do {
     position: relative;
     align-items: flex-end;
+    margin-top: 56px;
+    padding-bottom: 96px;
   }
 
   .how-do__video {
     position: absolute;
+    width: 685px;
     top: 0;
     left: 0;
   }
 
   .how-do__wrapper-btn,
   .how-do__wrapper-title,
+  .how-do__wrapper-text {
+    width: 260px;
+  }
+
   .how-do__text {
-    width: 350px;
+    padding-left: 10px;
+  }
+
+  .how-do__icon {
+    top: 42px;
+    left: 52px;
+  }
+
+  .how-do__title {
+    padding-left: 5px;
+    padding-top: 60px;
+  }
+
+  .how-do__wrapper-btn {
+    padding-top: 17px;
+    width: 230px;
+    padding-right: 56px;
+    padding-bottom: 12px;
   }
 }

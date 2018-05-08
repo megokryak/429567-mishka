@@ -15,16 +15,33 @@
 
 .main-nav__logo-link {
   flex-grow: 1;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.main-nav__logo-link:hover {
+  opacity: 0.6;
+}
+
+.main-nav__logo-link:active {
+  opacity: 0.3;
 }
 
 .main-nav__logo-image {
   display: block;
-  width: 86px;
+  width: 85px;
+  height: 35px;
   margin: 0 auto;
+}
+
+.main-nav__close {
+  width: 20px;
+  height: 20px;
 }
 
 .main-nav__free-shipping {
   display: none;
+  font-weight: normal;
 }
 
 @media (min-width: @tablet-width) {
@@ -74,7 +91,7 @@
   .main-nav__logo {
     order: -4;
     padding-left: 0;
-    width: 310px;
+    width: 270px;
   }
 
   .main-nav__logo-image {

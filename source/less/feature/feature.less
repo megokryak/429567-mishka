@@ -3,7 +3,6 @@
 }
 
 .feature__title {
-  text-align: center;
   font-size: 25px;
   color: #000000;
   line-height: 33px;
@@ -16,6 +15,7 @@
   line-height: 20px;
   font-weight: bold;
   color: #63d1bb;
+  text-transform: uppercase;
 }
 
 
@@ -41,13 +41,15 @@
 }
 
 .feature__info-description {
-  padding-left: 10px;
+  padding-left: 23px;
   padding-right: 30px;
 }
 
 .feature__image {
   display: block;
   margin: 0 auto;
+  width: 260px;
+  height: 315px;
 }
 
 .feature__price {
@@ -55,15 +57,19 @@
   font-weight: bold;
   line-height: 24px;
   text-align: center;
-  margin-top: 22px;
+  margin-top: 24px;
 }
 
 .feature__margin {
-  margin-top: 28px;
+  margin-top: 29px;
   width: 298px;
 }
 
 @media (min-width: @tablet-width) {
+  .feature {
+    padding-bottom: 70px;
+  }
+
   .feature__wrapper-info {
     display: flex;
     align-items: flex-end;
@@ -75,30 +81,39 @@
     text-align: left;
     font-size: 43px;
     line-height: 50px;
+    margin-top: 30px;
   }
 
   .feature__top-week {
     font-size: 17px;
     line-height: 17px;
-    width: 100px;
+    width: 120px;
     text-align: center;
+    padding-bottom: 5px;
   }
 
   .feature__description {
     font-size: 17px;
     line-height: 30px;
+    padding-top: 50px;
   }
 
   .feature__info {
     font-size: 15px;
     line-height: 20px;
+    margin-top: 38px;
+    margin-bottom: 33px;
+  }
+
+  .feature__info-name {
+    padding-bottom: 11px;
   }
 
   .feature__price {
     font-size: 20px;
   }
 
-  .feature__wrapper-decription {
+  .feature__wrapper-description {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -110,15 +125,32 @@
     position: absolute;
     order: -4;
     left: 100%;
+    top: 55px;
     align-self: flex-end;
     margin: 0;
+  }
+
+  .feature__margin {
+    margin-top: 38px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .feature {
+    padding-bottom: 100px;
+  }
+
   .feature__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .feature__info {
+    margin-top: 50px;
+  }
+
+  .feature__info-name {
+    padding-bottom: 12px;
   }
 
   .feature__top-week {
@@ -126,16 +158,26 @@
     width: 100px;
     line-height: 17px;
     text-align: center;
-    padding-left: 37.5px;
+    padding-left: 33px;
     padding-right: 37.5px;
+    padding-bottom: 10px;
   }
 
   .feature__image {
-    top: -70px;
+    top: -110px;
     z-index: -10;
   }
 
-  .feature__wrapper-decription {
+  .feature__price {
+    margin-top: 72px;
+  }
+
+  .feature__wrapper-description {
     padding-left: 175px;
+    padding-right: 60px;
+  }
+
+  .feature__wrapper-info {
+    padding-top: 73px;
   }
 }
