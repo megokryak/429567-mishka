@@ -1,6 +1,6 @@
 .form-order {
   margin-top: 24px;
-  padding-bottom: 17px;
+  padding-bottom: 57px;
 }
 
 .form-order__title {
@@ -209,6 +209,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 74px;
+    padding-bottom: 30px;
   }
 
   .form-order__title::after {
@@ -412,8 +413,19 @@
 }
 
 @media (min-width: @desktop-width) {
+  .form-order__title {
+    padding-left: 64px;
+    width: 111px;
+  }
+
+  .form-order__wrapper-checkbox {
+    width: 875px;
+    justify-content: flex-start;
+    padding-bottom: 23px;
+  }
+
   .form-order__label-color {
-    width: 264px;
+    width: 182px;
   }
 
   .form-order__label-info {
@@ -422,7 +434,25 @@
 
   .form-order__label-contacts {
     width: 700px;
-    margin-right: 150px;
+    margin-right: 180px;
     flex-grow: 0;
+  }
+
+  .fotm-order__icon-phone {
+    right: 9px;
+  }
+
+  .form-order__icon-email {
+    right: 5px;
+  }
+
+  .form-order__label-message,
+  .form-order__text {
+    margin-right: 175px;
+  }
+
+  input.form-order__submit-btn {
+    margin-left: 175px;
+    margin-top: 49px;
   }
 }
