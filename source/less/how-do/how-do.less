@@ -5,6 +5,22 @@
   margin-bottom: 57px;
 }
 
+.how-do__video-content {
+  position: relative;
+}
+
+.how-do__start {
+  position: absolute;
+  top: 35px;
+  left: 72px;
+  background: 0 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 76px;
+}
+
 .how-do__image {
   display: block;
   margin: 0 auto;
@@ -63,9 +79,20 @@
   }
 
   .how-do__video {
-    order: -1;
     width: 668px;
     height: 455px;
+  }
+
+  .how-do__video-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .how-do__start {
+    top: 190px;
+    left: 282px;
+    z-index: 1;
   }
 
   .how-do__wrapper-title {
