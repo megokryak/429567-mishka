@@ -232,11 +232,23 @@
   .form-order__section-message {
     padding-left: 50px;
     padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    order: -3;
   }
 
   .form-order__text {
     padding-left: 0;
     padding-right: 50px;
+    padding-top: 55px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #444444;
+    font-weight: normal;
+    order: -1;
+    flex-grow: 1;
+    text-align: right;
   }
 
   .form-order__submit-btn {
@@ -249,17 +261,6 @@
 
   .form-order__title::after {
     display: none;
-  }
-
-  .form-order__section-type,
-  .form-order__section-color,
-  .form-order__section-fullname,
-  .form-order__section-contacts,
-  .form-order__section-message {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    order: -3;
   }
 
   .form-order__section-color {
@@ -430,17 +431,6 @@
   .form-order__label-message {
     min-width: 400px;
     flex-grow: 1;
-  }
-
-  .form-order__text {
-    font-size: 17px;
-    line-height: 30px;
-    color: #444444;
-    font-weight: normal;
-    order: -1;
-    flex-grow: 1;
-    text-align: right;
-    padding-top: 55px;
   }
 
   input.form-order__submit-btn {
