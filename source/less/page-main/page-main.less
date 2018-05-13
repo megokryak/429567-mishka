@@ -1,12 +1,15 @@
 @media (min-width: @tablet-width) {
   .page-main__wrapper {
-    padding-top: 53px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-main__wrapper {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 }

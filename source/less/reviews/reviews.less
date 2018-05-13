@@ -1,3 +1,8 @@
+.reviews {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .reviews__wrapper {
   padding-left: 30px;
   padding-right: 30px;
@@ -61,6 +66,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .reviews {
+    width: 768px;
+  }
+
   .reviews__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -124,9 +133,18 @@
     flex-direction: column;
     padding-top: 60px;
   }
+
+  .reviews__prev,
+  .reviews__next {
+    border: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .reviews {
+    width: 1150px;
+  }
+
   .reviews__wrapper {
     padding-left: 225px;
     padding-bottom: 125px;
