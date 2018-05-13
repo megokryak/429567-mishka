@@ -60,6 +60,7 @@
   display: block;
   margin: 0 auto;
   height: auto;
+  max-width: 100%;
 }
 
 .contacts__map-pin {
@@ -149,16 +150,15 @@
 
 @media (min-width: @desktop-width) {
   .contacts__wrapper-main {
-    width: 1150px;
+    width: 1050px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 90px;
+    padding-bottom: 50px;
     position: relative;
   }
 
   .contacts__wrapper {
     width: 525px;
-    min-height: 513px;
   }
 
   .contacts__wrapper {
@@ -170,14 +170,15 @@
     order: -1;
     width: 168px;
     padding-left: 2px;
-    padding-top: 105px;
+    padding-top: 110px;
   }
 
   .contacts__title {
     flex-grow: 0;
     font-size: 53px;
     line-height: 57px;
-    padding-top: 113px;
+    padding-top: 120px;
+    padding-bottom: 48px;
   }
 
   .contacts__info {
@@ -188,7 +189,7 @@
 
   .contacts__wrapper-map {
     position: absolute;
-    top: 69px;
+    top: 50px;
     left: 575px;
     margin: 0;
   }
