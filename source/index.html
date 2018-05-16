@@ -310,20 +310,27 @@
           </div>
         </div>
       </section>
-      <div class="modal-window">
+      <div class="modal-window modal-window--enable">
         <form class="add-car" action="https://echo.htmlacademy.ru" method="get">
           <h2 class="add-car__title">Добавить в корзину</h2>
           <p class="add-car__text">Выберите размер:</p>
-          <label>
-            <input class="add-car__size add-car__size--active" type="radio" name="size" value="s">S
-          </label>
-          <label>
-            <input class="add-car__size" type="radio" name="size" value="m">M
-          </label>
-          <label>
-            <input class="add-car__size" type="radio" name="size" value="l">L
-          </label>
-          <input class="btn btn__submit" type="submit" value="Добавить">
+          <div class="add-car__wrapper">
+            <label class="add-car__label-size">
+              <input class="add-car__size" type="radio" name="size" value="s">
+              <span class="add-car__decor-radio">S</span>
+            </label>
+            <label class="add-car__label-size">
+              <input class="add-car__size" type="radio" name="size" value="m">
+              <span class="add-car__decor-radio">M</span>
+            </label>
+            <label class="add-car__label-size">
+              <input class="add-car__size" type="radio" name="size" value="l">
+              <span class="add-car__decor-radio">L</span>
+            </label>
+          </div>
+          <div class="add-car__wrapper-submit">
+            <input class="btn add-car__submit" type="submit" value="Добавить">
+          <div>
         </form>
       </div>
     </main>
