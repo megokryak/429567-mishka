@@ -3,6 +3,14 @@
   margin-top: 31px;
 }
 
+.catalog-item:hover .catalog-item__wrapper {
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:active .catalog-item__wrapper {
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1);
+}
+
 .catalog-item__image {
   display: block;
   max-width: 100%;
@@ -11,12 +19,13 @@
 }
 
 .catalog-item__title {
+  display: block;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
   padding-left: 27px;
   padding-right: 27px;
-  padding-top: 25px;
+  padding-top: 26px;
   color: rgba(0, 0, 0, 1);
   cursor: pointer;
   text-decoration: none;

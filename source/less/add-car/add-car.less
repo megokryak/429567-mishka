@@ -6,7 +6,7 @@
   background-color: #ffffff;
 }
 
-.add-car__title{
+.add-car__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -44,14 +44,26 @@
   width: 82px;
 }
 
+
 .add-car__decor-radio {
   position: absolute;
   top: 0;
   left: 0;
   width: 78px;
   height: 47px;
-  border: 2px solid #63d1bb;
+  border: 2px solid rgba(63, 63, 63, 0.1);
+  font-size: 17px;
+  line-height: 47px;
+  font-weight: bold;
   text-align: center;
+}
+
+.add-car__label-size:hover .add-car__decor-radio {
+  border: 2px solid rgba(67, 67, 67, 0.2);
+}
+
+.add-car__size:checked + .add-car__decor-radio {
+  border-color: #63d1bb;
 }
 
 .add-car__wrapper-submit {
@@ -65,3 +77,16 @@ input.add-car__submit {
   border: none;
 }
 
+@media (min-width: @tablet-width) {
+  .add-car {
+    width: 566px;
+    height: 366px;
+  }
+
+  .add-car__title {
+    font-size: 23px;
+    line-height: 30px;
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+}
