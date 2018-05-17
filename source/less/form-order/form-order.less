@@ -71,7 +71,7 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
-  padding-bottom: 18px;
+  padding-bottom: 14px;
 }
 
 .form-order__input,
@@ -80,7 +80,7 @@
   font-size: 17px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.3);
-  padding-bottom: 13px;
+  padding-bottom: 17px;
   border: 0;
   border-bottom: 2px solid rgba(0, 0, 0, 1);
   width: 100%;
@@ -222,7 +222,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 74px;
-    padding-bottom: 30px;
+    padding-bottom: 33px;
   }
 
   .form-order__section-type,
@@ -241,7 +241,7 @@
   .form-order__text {
     padding-left: 0;
     padding-right: 50px;
-    padding-top: 55px;
+    padding-top: 58px;
     font-size: 17px;
     line-height: 30px;
     color: #444444;
@@ -254,7 +254,7 @@
   .form-order__submit-btn {
     padding-left: 50px;
     padding-right: 0;
-    padding-top: 50px;
+    padding-top: 53px;
     order: -2;
     width: 230px;
   }
@@ -306,12 +306,16 @@
     width: 500px;
   }
 
+  .form-order__section-fullname {
+    padding-bottom: 5px;
+  }
+
   .form-order__wrapper-fullname {
-    padding-top: 65px;
+    padding-top: 60px;
   }
 
   .form-order__wrapper-fullname .form-order__label-info {
-    padding-bottom: 39px;
+    padding-bottom: 35px;
   }
 
   .form-order__label-color {
@@ -366,6 +370,7 @@
   .form-order__reg {
     font-size: 19px;
     line-height: 18px;
+    padding-top: 4px;
   }
 
   .form-order__input {
@@ -375,14 +380,19 @@
     font-size: 19px;
     line-height: 18px;
     padding-left: 17px;
-    padding-bottom: 15px;
+    padding-bottom: 19px;
   }
 
   .form-order__wrapper-phone {
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
-    padding-top: 68px;
+    padding-top: 64px;
+    padding-bottom: 28px;
+  }
+
+  .form-order__wrapper-phone .form-order__title{
+    padding-top: 4px;
   }
 
   .form-order__wrapper-mail {
@@ -393,13 +403,17 @@
     padding-bottom: 50px;
   }
 
+  .form-order__wrapper-mail .form-order__title{
+    padding-top: 4px;
+  }
+
   .form-order__icon-email {
-    top: -6px;
+    top: -2px;
     right: 22px;
   }
 
   .form-order__icon-phone {
-    top: -6px;
+    top: -2px;
     right: 25px;
   }
 
@@ -418,14 +432,15 @@
     flex-grow: 1;
     font-size: 19px;
     line-height: 18px;
-    padding-left: 25px;
-    padding-bottom: 14px;
+    padding-left: 18px;
+    padding-bottom: 18px;
     padding-top: 0;
   }
 
   .form-order__textarea {
-    font-size: 19px;
+    font-size: 17px;
     margin-top: 50px;
+    color: rgba(68, 68, 68, 0.3);
   }
 
   .form-order__label-message {
@@ -441,6 +456,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .form-order {
+    padding-bottom: 30px;
+  }
+
   .form-order__title {
     padding-left: 64px;
     width: 111px;
@@ -486,5 +505,26 @@
 
   .form-order__submit-btn {
     padding-left: 225px;
+  }
+
+  .form-order__section-type,
+  .form-order__section-color,
+  .form-order__section-fullname,
+  .form-order__section-contacts,
+  .form-order__section-message {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    order: -3;
+  }
+
+  .form-order__submit-btn {
+    padding-left: 275px;
+  }
+
+  .form-order__text {
+    margin-right: 225px;
   }
 }
