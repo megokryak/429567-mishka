@@ -3,10 +3,22 @@
   margin: 0 auto;
 }
 
+.reviews::after {
+  display: block;
+  content: "";
+  position: relative;
+  height: 6px;
+  background: url("../img/bg-zigzag-line.svg") repeat-x -20px 0;
+  background-size: contain;
+  z-index: 1;
+  padding: 0;
+  margin-top: 0;
+}
+
 .reviews__wrapper {
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 55px;
+  padding-bottom: 48px;
 }
 
 .reviews__title {
@@ -159,6 +171,10 @@
     font-size: 53px;
     line-height: 57px;
     padding-top: 80px;
+  }
+
+  .reviews__text {
+    width: 800px;
   }
 
   .reviews__toggle {
